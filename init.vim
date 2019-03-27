@@ -33,7 +33,7 @@ Plug 'lifepillar/vim-solarized8'
 " Haskell
 Plug 'edkolev/curry.vim'
 " Plug 'parsonsmatt/vim2hs'
-Plug 'enomsg/vim-haskellConcealPlus'
+" Plug 'enomsg/vim-haskellConcealPlus'
 
 " Coq
 "Plug 'the-lambda-church/coquille'

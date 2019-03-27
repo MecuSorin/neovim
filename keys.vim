@@ -11,6 +11,12 @@ nmap <Leader>S <Plug>(jasymotion-t2)
 map  <Leader><Leader>f <Plug>(easymotion-bd-f)
 map  <Leader><Leader>w <Plug>(easymotion-bd-w)
 
+"Haskell
+imap <buffer> aaa <*>
+imap <buffer> mmm <$>
+imap <buffer> bbb >>=
+imap <buffer> kkk >=>
+
 " Quit and save
 nnoremap <leader>z	:wq!<cr>
 nnoremap <leader>q	:q<cr>
