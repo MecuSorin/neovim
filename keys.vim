@@ -17,6 +17,22 @@ imap <buffer> mmm <$>
 imap <buffer> bbb >>=
 imap <buffer> kkk >=>
 
+"Remap start and end of the line
+nnoremap H ^
+nnoremap L $
+
+" Since I use yy instead of Y, i can make Y consistent with D behaviour
+nnoremap Y y$
+
+"Move cursor inside braces
+inoremap <> <><Left>
+inoremap () ()<Left>
+inoremap {} {}<Left>
+inoremap [] []<Left>
+inoremap "" ""<Left>
+inoremap '' ''<Left>
+inoremap `` ``<Left>
+
 " Quit and save
 nnoremap <leader>z	:wq!<cr>
 nnoremap <leader>q	:q<cr>
@@ -30,7 +46,7 @@ vnoremap <leader>y	"*y
 nnoremap <leader>c	:let @*=@"<cr>
 vnoremap <leader>x	"*x
 
-" Sets the commands like ci; or ya.
+" Sets the commands like ci. or ya; or da;
 for mnemonic in  [ ".", ";"]
 	for command in [ "y", "d", "c", "v" ]
 		exe "nnoremap ".command."i".mnemonic." T".mnemonic.command."t".mnemonic
